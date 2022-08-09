@@ -5,7 +5,8 @@ Hope this will ever be useful to someone, it was fun to make.
 The Timer object inherit from the threading.Thread object, but you don't need to think about that at all, everything is being taken care of internally.
 
 
-A Timer object need 4 arguments when initialized, example bellow:
+A Timer object need 4 arguments when initialized, example below:
+
 my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....), loop = False)
   
 delay: int or float; represents the waiting time in seconds before executing the callback
