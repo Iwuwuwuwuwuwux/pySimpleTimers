@@ -5,9 +5,9 @@ Hope this will ever be useful to someone, it was fun to make.
 
 The Timer object inherit from the threading.Thread object, but you don't need to think about that at all, everything is being taken care of internally.
 
--
+ 
 
--
+ 
 
 A Timer object need 4 arguments when initialized, example below:
 
