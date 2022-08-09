@@ -33,7 +33,7 @@ There are some useful funcs to use with these Timer objects and vars that can me
 
 |
 
-- timer_obj.start(): DOESN'T start a thread, it override this function, it only starts the timer, can be called MORE than one time, if the timer is already started, it will restart it from 0
+- timer_obj.start(): DOESN'T start a thread, this function override the original Thread.start() function, it only starts the timer, can be called MORE than one time, if the timer is already started, it will restart it from 0
   
 - timer_obj.stop(): stops the timer but doesn't set its current time to 0
   
