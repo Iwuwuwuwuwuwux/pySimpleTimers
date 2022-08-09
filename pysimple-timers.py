@@ -57,7 +57,7 @@ class Timer(threading.Thread):
     
     
 """
-exemple of use:
+example of use:
 
 def my_func(args: tuple):
     number1 = args[0]
@@ -75,12 +75,12 @@ sleep(10)
 you can't set a var using the tuple, you are going to need this value to be global; not really understandable
 so here is an example of what i mean:
 
-what_animals_i_prefer_now_str = "dogs"
+what_animals_i_currently_prefer_str = "dogs"
 
 def set_my_var(args: tuple):
-    global what_animals_i_prefer_str
+    global what_animals_i_currently_prefer_str
     
-    what_animals_i_prefer_now_str = args[0]
+    what_animals_i_currently_prefer_str = args[0]
 
 my_timer = Timer(delay = 5, callback = set_my_var, args = ("cats"), loop = False)
 my_timer.start()
