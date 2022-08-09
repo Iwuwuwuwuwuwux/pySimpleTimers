@@ -29,9 +29,7 @@ There are some useful funcs to use with these Timer objects and vars that can me
 
 |
 
--------------------- functions --------------------
-
-|
+## ----- functions -----
 
 - timer_obj.start(): DOESN'T start a thread, this function override the original Thread.start() function, it only starts the timer, can be called MORE than one time, if the timer is already started, it will restart it from 0
   
@@ -41,17 +39,13 @@ There are some useful funcs to use with these Timer objects and vars that can me
 
 |
 
-|
-
--------------------- vars --------------------
- 
-|
+## ----- vars -----
  
 - timer_obj.current_time: you should definitely not modify this, var containing the current time of the timer
  
 |
 
----------- the vars bellow can be modified even if the timer is already started but it can still cause errors, you should call the .stop() function before changing them (because the timer is a thread, it is possible, yet very unlikely, that you'll modify something at the same moment that it's being called, and then raise an error) ----------
+the vars bellow can be modified even if the timer is already started but it can still cause errors, you should call the .stop() function before changing them (because the timer is a thread, it is possible, yet very unlikely, that you'll modify something at the same moment that it's being called, and then raise an error)
 
 |
 
