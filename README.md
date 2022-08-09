@@ -7,8 +7,6 @@ The Timer object inherit from the threading.Thread object, but you don't need to
 
 |
 
-|
-
 A Timer object need 4 arguments when initialized, example below:
 
 my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....), loop = False)
@@ -23,11 +21,7 @@ my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....),
 
 |
 
-|
-
 There are some useful funcs to use with these Timer objects and vars that can me modified:
-
-|
 
 ## ----- functions -----
 
