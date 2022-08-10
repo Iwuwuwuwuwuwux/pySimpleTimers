@@ -42,7 +42,7 @@ There are some useful funcs to use with these Timer objects and vars that can me
 
 The vars bellow can be modified even if the timer is already started but it can still cause errors, you should call the .stop() function before changing them (because the timer is a thread, it is possible, yet very unlikely, that you'll modify something at the same moment that it's being called, and then raise an error).
 
-- sleep_time: int or float, the time that will be wait before checking if the delay has been exceded or not (need to be precise or not, at your convenience) NEED TO BE GREATER THAN O 
+- sleep_time: int or float, the time that will be wait before checking if the delay has been exceded or not (need to be precise or not, at your convenience) NEED TO BE GREATER THAN 0
 
 - timer_obj.delay: int or float, set at the timer's creation, duration of the timer (time waited before the execution of the callback)
   
