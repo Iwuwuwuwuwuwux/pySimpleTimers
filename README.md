@@ -8,6 +8,8 @@ The Timer object inherit from the threading.Thread object, but you don't need to
 
 <br>
 
+<br>
+
 A Timer object need 4 arguments when initialized, example below:
 
 ```py
