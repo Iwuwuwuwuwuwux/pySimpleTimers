@@ -24,7 +24,7 @@ my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....),
 
 <br>
 
-There are some useful funcs to use with these Timer objects and vars that can me modified:
+There are some useful funcs to use with these Timer objects and vars that can be modified:
 
 ## ----- functions -----
 
