@@ -6,11 +6,13 @@ Hope this will ever be useful to someone, it was fun to make.
 
 The Timer object inherit from the threading.Thread object, but you don't need to think about that at all, everything is being taken care of internally.
 
-|
+<br>
 
 A Timer object need 4 arguments when initialized, example below:
 
+```py
 my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....), loop = False)
+```
   
 - delay: int or float; represents the waiting time in seconds before executing the callback
 
@@ -20,7 +22,7 @@ my_timer = Timer(delay = 5, callback = my_func, args = (a_string, an_int, ....),
 
 - loop: bool; whether your timer will start over when it's finished or not
 
-|
+<br>
 
 There are some useful funcs to use with these Timer objects and vars that can me modified:
 
@@ -32,7 +34,7 @@ There are some useful funcs to use with these Timer objects and vars that can me
   
 - timer_obj.quit(): stops the timer and KILL THE THREAD, after that the timer can't be restarted and is only useful to access its data
 
-|
+<br>
 
 ## ----- vars -----
  
