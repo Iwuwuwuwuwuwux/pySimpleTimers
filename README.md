@@ -38,14 +38,16 @@ There are some useful funcs to use with these Timer objects and vars that can me
 
 ## ----- vars -----
  
-- timer_obj.current_time: you should definitely not modify this, var containing the current time of the timer
+- timer_obj.current_time: int or float, you should definitely not modify this, var containing the current time of the timer
 
 The vars bellow can be modified even if the timer is already started but it can still cause errors, you should call the .stop() function before changing them (because the timer is a thread, it is possible, yet very unlikely, that you'll modify something at the same moment that it's being called, and then raise an error).
 
-- timer_obj.delay: set at the timer's creation, duration of the timer (time waited before the execution of the callback)
-  
-- timer_obj.callback: set at the timer's creation, function called when the timer is completed
+- sleep_time: int or float, the time that will be wait before checking if the delay has been exceded or not (need to be precise or not, at your convenience) NEED TO BE GREATER THAN O 
 
-- self.args: set at the timer's creation, args of the callback function, need to be a tuple
+- timer_obj.delay: int or float, set at the timer's creation, duration of the timer (time waited before the execution of the callback)
   
-- self.loop: set at the timer's creation, True if the timer will repeats when it's completed
+- timer_obj.callback: function, set at the timer's creation, function called when the timer is completed
+
+- self.args: tuple, set at the timer's creation, args of the callback function, need to be a tuple
+  
+- self.loop: bool, set at the timer's creation, True if the timer will repeats when it's completed
