@@ -38,7 +38,7 @@ class Timer(threading.Thread):
                 
                 if self.is_running == False: break #if the stop func is called then break to return to the waiting part
                 
-                current_time = current_time + sleep_time
+                self.current_time = self.current_time + self.sleep_time
             
             if self.close_thread == True: break
             elif self.is_running == False: continue
