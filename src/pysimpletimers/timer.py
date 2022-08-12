@@ -30,7 +30,9 @@ class Timer(threading.Thread):
             
         while True:
             if self.close_thread == True: break #the thread will be closed if the above while: True is broken
-            elif self.is_running == False: continue #won't execute the timer part if the timer is not "started"
+            elif self.is_running == False: #won't execute the timer part if the timer is not "started"
+                sleep(0.2)
+                continue
         
             self.current_time = 0
             while self.current_time < self.delay: #"current_time" can be greater than the set delay if the delay is a float,
