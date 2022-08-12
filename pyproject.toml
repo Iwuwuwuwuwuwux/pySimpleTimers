@@ -1,0 +1,23 @@
+[build-setup]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pysimpletimers"
+version = "0.0.1"
+authors = [
+  { name="Ilunawoo", email="author@example.com" },
+]
+description = "A small module that lets you easily create timers that will run a callback function when a certain amount of time has been waited."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Ilunawoo/pySimpleTimers"
+"Bug Tracker" = "https://github.com/Ilunawoo/pySimpleTimers/issues"
